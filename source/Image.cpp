@@ -1,5 +1,6 @@
 #include "Image.h"
 #include <opencv2/opencv.hpp>
+#include <iostream>
 
 Image::Image(int w, int h) :
 	  width(w)

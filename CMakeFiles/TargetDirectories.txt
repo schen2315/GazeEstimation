@@ -1,0 +1,3 @@
+/Users/song/Code/GazeEstimation2/CMakeFiles/edit_cache.dir
+/Users/song/Code/GazeEstimation2/CMakeFiles/rebuild_cache.dir
+/Users/song/Code/GazeEstimation2/CMakeFiles/EyeTracking.dir

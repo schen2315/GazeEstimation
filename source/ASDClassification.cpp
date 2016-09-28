@@ -4,6 +4,7 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/lambda/bind.hpp>
 #include <iostream>
+#include <string>
 #include "Image.h"
 
 ASDClassification::ASDClassification()
@@ -90,9 +91,11 @@ void ASDClassification::WriteArffGazePoints(std::ostream& out, int size)
 	}
 	std::cout << count << std::endl;
 }
-void ASDClassification::WriteArffFile(std::string file)
+void ASDClassification::WriteArffFile(std::string file, std::string file2)
 {
 	std::ofstream out;
+	std::ofstream out2;
+	out2.open(file2);
 	out.open(file);
 	out << "% 1. Title: ASD Classification\n"
 		<< "%\n"
@@ -104,12 +107,16 @@ void ASDClassification::WriteArffFile(std::string file)
 		<< "\n"
 		<< "@ATTRIBUTE gender NUMERIC\n"
 		<< "@ATTRIBUTE age NUMERIC\n";
+
+	out2 << "Here is a test to see if anything is being written to file " << std::endl;
 	int size(100000);
 	for (auto& subject : data)
 	{
+		out2 << subject.fileName << std::endl;
 		if (subject.avgGaze.size() < size)
 		{
 			size = static_cast<int>(subject.avgGaze.size());
+			//out2 << subject.fileName << std::endl;
 		}
 	}
 	for (int i = 0; i < size; ++i)
@@ -124,6 +131,7 @@ void ASDClassification::WriteArffFile(std::string file)
 		<< "\n@DATA\n";
 	WriteArffGazePoints(out, size);
 	out.close();
+	out2.close();
 }
 bool ASDClassification::EyeMissing(std::vector<std::string>& data)
 {

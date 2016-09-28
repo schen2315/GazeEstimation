@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include "Point.h"
+#include <iostream>
 
 struct SubjectData
 {
