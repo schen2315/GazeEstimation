@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/song/Code/GazeEstimation2/source/ASDClassification.cpp
+/Users/song/Code/GazeEstimation/source/ASDClassification.cpp
 ASDClassification.h
-/Users/song/Code/GazeEstimation2/source/ASDClassification.h
+/Users/song/Code/GazeEstimation/source/ASDClassification.h
 boost/filesystem.hpp
-/Users/song/Code/GazeEstimation2/source/boost/filesystem.hpp
+/Users/song/Code/GazeEstimation/source/boost/filesystem.hpp
 boost/lexical_cast.hpp
-/Users/song/Code/GazeEstimation2/source/boost/lexical_cast.hpp
+/Users/song/Code/GazeEstimation/source/boost/lexical_cast.hpp
 boost/algorithm/string.hpp
 -
 boost/lambda/bind.hpp
@@ -22,11 +22,11 @@ iostream
 string
 -
 Image.h
-/Users/song/Code/GazeEstimation2/source/Image.h
+/Users/song/Code/GazeEstimation/source/Image.h
 
-/Users/song/Code/GazeEstimation2/source/EyeTrackingData.cpp
+/Users/song/Code/GazeEstimation/source/EyeTrackingData.cpp
 EyeTrackingData.h
-/Users/song/Code/GazeEstimation2/source/EyeTrackingData.h
+/Users/song/Code/GazeEstimation/source/EyeTrackingData.h
 boost/algorithm/string.hpp
 -
 boost/lexical_cast.hpp
@@ -38,15 +38,15 @@ vector
 iostream
 -
 
-/Users/song/Code/GazeEstimation2/source/Image.cpp
+/Users/song/Code/GazeEstimation/source/Image.cpp
 Image.h
-/Users/song/Code/GazeEstimation2/source/Image.h
+/Users/song/Code/GazeEstimation/source/Image.h
 opencv2/opencv.hpp
 -
 iostream
 -
 
-/Users/song/Code/GazeEstimation2/source/main.cpp
+/Users/song/Code/GazeEstimation/source/main.cpp
 iostream
 -
 boost/asio.hpp
@@ -56,9 +56,9 @@ boost/array.hpp
 boost/asio/read.hpp
 -
 EyeTrackingData.h
-/Users/song/Code/GazeEstimation2/source/EyeTrackingData.h
+/Users/song/Code/GazeEstimation/source/EyeTrackingData.h
 ASDClassification.h
-/Users/song/Code/GazeEstimation2/source/ASDClassification.h
+/Users/song/Code/GazeEstimation/source/ASDClassification.h
 
 /usr/local/include/boost/algorithm/string.hpp
 boost/algorithm/string/std_containers_traits.hpp

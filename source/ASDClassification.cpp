@@ -70,6 +70,10 @@ void ASDClassification::ParseTSVFile(SubjectData& data)
 }
 void ASDClassification::WriteArffGazePoints(std::ostream& out, int size)
 {
+	float sdX(0);
+	float sdY(0);
+	float meanX(0);
+	float meanY(0);
 	int count(0);
 	for (auto& subject : data)
 	{
@@ -84,7 +88,20 @@ void ASDClassification::WriteArffGazePoints(std::ostream& out, int size)
 			for (int i = 0; i < size; ++i)
 			{
 				out << std::to_string(subject.avgGaze.at(i).x) << "," << std::to_string(subject.avgGaze.at(i).y) << ",";
+				meanX += subject.avgGaze.at(i).x;
+				meanY += subject.avgGaze.at(i).y;
+				sdX += (subject.avgGaze.at(i).x * subject.avgGaze.at(i).x);
+				sdY += (subject.avgGaze.at(i).y * subject.avgGaze.at(i).y);
 			}
+			//add mean feature here
+			meanX = meanX/size;
+			meanY = meanY/size;
+			sdX = sdX - (size*(meanX*meanX));
+			sdX = sdX/(size-1);
+			sdY = sdY - (size*(meanY*meanY));
+			sdY = sdY/(size-1);
+			out << meanX << "," << meanY << ",";
+			out << sdX << "," << sdY << ",";
 			out << subject.diagnosis << std::endl;
 		}
 		++count;
@@ -107,12 +124,13 @@ void ASDClassification::WriteArffFile(std::string file, std::string file2)
 		<< "\n"
 		<< "@ATTRIBUTE gender NUMERIC\n"
 		<< "@ATTRIBUTE age NUMERIC\n";
+		//going to add a new feature here at the end
 
-	out2 << "Here is a test to see if anything is being written to file " << std::endl;
+	//out2 << "Here is a test to see if anything is being written to file " << std::endl;
 	int size(100000);
 	for (auto& subject : data)
 	{
-		out2 << subject.fileName << std::endl;
+		out2 << subject.fileName << " " << subject.age << std::endl;
 		if (subject.avgGaze.size() < size)
 		{
 			size = static_cast<int>(subject.avgGaze.size());
@@ -127,6 +145,13 @@ void ASDClassification::WriteArffFile(std::string file, std::string file2)
 		std::string gazeYLine = "@ATTRIBUTE " + gazeY + " NUMERIC";
 		out << gazeXLine << std::endl << gazeYLine << std::endl;
 	}
+	//going to add a new feature here at the end
+	std::string meanX = "@ATTRIBUTE meanX NUMERIC";
+	std::string meanY = "@ATTRIBUTE meanY NUMERIC";
+	std::string sdX = "@ATTRIBUTE sdX NUMERIC";
+	std::string sdY = "@ATTRIBUTE sdY NUMERIC";
+	out << meanX << std::endl << meanY << std::endl;
+	out << sdX << std::endl << sdY << std::endl;
 	out << "@ATTRIBUTE class { low, medium, high, ASD }\n"
 		<< "\n@DATA\n";
 	WriteArffGazePoints(out, size);
@@ -155,11 +180,11 @@ void ASDClassification::ReadCSVFile(std::string csvFile)
 		{
 			break;
 		}
+		std::vector<std::string> split;
 		std::getline(in, line);
-		if (lineCounter != 0)
+		boost::split(split, line, boost::is_any_of(","));
+		if (lineCounter != 0 && boost::lexical_cast<int>(split.at(0)) < 64)
 		{
-			std::vector<std::string> split;
-			boost::split(split, line, boost::is_any_of(","));
 			SubjectData sd;
 			sd.age = boost::lexical_cast<int>(split.at(0));
 			sd.gender = split.at(1);

@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.6.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/song/Code/GazeEstimation2
+CMAKE_SOURCE_DIR = /Users/song/Code/GazeEstimation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/song/Code/GazeEstimation2
+CMAKE_BINARY_DIR = /Users/song/Code/GazeEstimation
 
 # Include any dependencies generated for this target.
 include CMakeFiles/EyeTracking.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/EyeTracking.dir/flags.make
 
 CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o: CMakeFiles/EyeTracking.dir/flags.make
 CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o: source/ASDClassification.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o -c /Users/song/Code/GazeEstimation2/source/ASDClassification.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o -c /Users/song/Code/GazeEstimation/source/ASDClassification.cpp
 
 CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation2/source/ASDClassification.cpp > CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation/source/ASDClassification.cpp > CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.i
 
 CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation2/source/ASDClassification.cpp -o CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation/source/ASDClassification.cpp -o CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.s
 
 CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o.provides.build: CMakeF
 
 CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o: CMakeFiles/EyeTracking.dir/flags.make
 CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o: source/EyeTrackingData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o -c /Users/song/Code/GazeEstimation2/source/EyeTrackingData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o -c /Users/song/Code/GazeEstimation/source/EyeTrackingData.cpp
 
 CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation2/source/EyeTrackingData.cpp > CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation/source/EyeTrackingData.cpp > CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.i
 
 CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation2/source/EyeTrackingData.cpp -o CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation/source/EyeTrackingData.cpp -o CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.s
 
 CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/EyeTracking.dir/source/Image.cpp.o: CMakeFiles/EyeTracking.dir/flags.make
 CMakeFiles/EyeTracking.dir/source/Image.cpp.o: source/Image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EyeTracking.dir/source/Image.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/Image.cpp.o -c /Users/song/Code/GazeEstimation2/source/Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EyeTracking.dir/source/Image.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/Image.cpp.o -c /Users/song/Code/GazeEstimation/source/Image.cpp
 
 CMakeFiles/EyeTracking.dir/source/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EyeTracking.dir/source/Image.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation2/source/Image.cpp > CMakeFiles/EyeTracking.dir/source/Image.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation/source/Image.cpp > CMakeFiles/EyeTracking.dir/source/Image.cpp.i
 
 CMakeFiles/EyeTracking.dir/source/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EyeTracking.dir/source/Image.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation2/source/Image.cpp -o CMakeFiles/EyeTracking.dir/source/Image.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation/source/Image.cpp -o CMakeFiles/EyeTracking.dir/source/Image.cpp.s
 
 CMakeFiles/EyeTracking.dir/source/Image.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/EyeTracking.dir/source/Image.cpp.o.provides.build: CMakeFiles/EyeTrac
 
 CMakeFiles/EyeTracking.dir/source/main.cpp.o: CMakeFiles/EyeTracking.dir/flags.make
 CMakeFiles/EyeTracking.dir/source/main.cpp.o: source/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EyeTracking.dir/source/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/main.cpp.o -c /Users/song/Code/GazeEstimation2/source/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/song/Code/GazeEstimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EyeTracking.dir/source/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EyeTracking.dir/source/main.cpp.o -c /Users/song/Code/GazeEstimation/source/main.cpp
 
 CMakeFiles/EyeTracking.dir/source/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EyeTracking.dir/source/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation2/source/main.cpp > CMakeFiles/EyeTracking.dir/source/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/song/Code/GazeEstimation/source/main.cpp > CMakeFiles/EyeTracking.dir/source/main.cpp.i
 
 CMakeFiles/EyeTracking.dir/source/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EyeTracking.dir/source/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation2/source/main.cpp -o CMakeFiles/EyeTracking.dir/source/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/song/Code/GazeEstimation/source/main.cpp -o CMakeFiles/EyeTracking.dir/source/main.cpp.s
 
 CMakeFiles/EyeTracking.dir/source/main.cpp.o.requires:
 
@@ -196,7 +196,7 @@ EyeTracking: /usr/local/lib/libopencv_imgproc.2.4.13.dylib
 EyeTracking: /usr/local/lib/libopencv_flann.2.4.13.dylib
 EyeTracking: /usr/local/lib/libopencv_core.2.4.13.dylib
 EyeTracking: CMakeFiles/EyeTracking.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/song/Code/GazeEstimation2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable EyeTracking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/song/Code/GazeEstimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable EyeTracking"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EyeTracking.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -216,6 +216,6 @@ CMakeFiles/EyeTracking.dir/clean:
 .PHONY : CMakeFiles/EyeTracking.dir/clean
 
 CMakeFiles/EyeTracking.dir/depend:
-	cd /Users/song/Code/GazeEstimation2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/song/Code/GazeEstimation2 /Users/song/Code/GazeEstimation2 /Users/song/Code/GazeEstimation2 /Users/song/Code/GazeEstimation2 /Users/song/Code/GazeEstimation2/CMakeFiles/EyeTracking.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/song/Code/GazeEstimation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/song/Code/GazeEstimation /Users/song/Code/GazeEstimation /Users/song/Code/GazeEstimation /Users/song/Code/GazeEstimation /Users/song/Code/GazeEstimation/CMakeFiles/EyeTracking.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/EyeTracking.dir/depend
 

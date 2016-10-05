@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -ferror-limit=100   -stdlib=libc++
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/opencv -I/usr/local/include -I/Users/song/Code/GazeEstimation2/include -I/include 
+CXX_INCLUDES = -I/usr/local/include/opencv -I/usr/local/include -I/Users/song/Code/GazeEstimation/include -I/include 
 

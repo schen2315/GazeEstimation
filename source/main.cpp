@@ -72,9 +72,9 @@ void NDAR()
 	std::cout << "testing" << std::endl;
 	classify.ReadCSVFile("./TestData/SubjectData.csv");
 	classify.ParseTSVFiles("./TestData/tsvData/");
-	classify.WriteArffFile("./TestData/asd.arff", "./TestData/out.txt");
+	classify.WriteArffFile("./TestData/asd_mean_sd.arff", "./TestData/out.txt");
 	for (size_t i = 0; i < classify.GetNumberOfSubjects(); ++i)
 	{
-		classify.CreateDisplayImageOfGaze(i);
+		//classify.CreateDisplayImageOfGaze(i);
 	}
 }

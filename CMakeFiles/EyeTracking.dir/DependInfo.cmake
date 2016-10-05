@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/song/Code/GazeEstimation2/source/ASDClassification.cpp" "/Users/song/Code/GazeEstimation2/CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o"
-  "/Users/song/Code/GazeEstimation2/source/EyeTrackingData.cpp" "/Users/song/Code/GazeEstimation2/CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o"
-  "/Users/song/Code/GazeEstimation2/source/Image.cpp" "/Users/song/Code/GazeEstimation2/CMakeFiles/EyeTracking.dir/source/Image.cpp.o"
-  "/Users/song/Code/GazeEstimation2/source/main.cpp" "/Users/song/Code/GazeEstimation2/CMakeFiles/EyeTracking.dir/source/main.cpp.o"
+  "/Users/song/Code/GazeEstimation/source/ASDClassification.cpp" "/Users/song/Code/GazeEstimation/CMakeFiles/EyeTracking.dir/source/ASDClassification.cpp.o"
+  "/Users/song/Code/GazeEstimation/source/EyeTrackingData.cpp" "/Users/song/Code/GazeEstimation/CMakeFiles/EyeTracking.dir/source/EyeTrackingData.cpp.o"
+  "/Users/song/Code/GazeEstimation/source/Image.cpp" "/Users/song/Code/GazeEstimation/CMakeFiles/EyeTracking.dir/source/Image.cpp.o"
+  "/Users/song/Code/GazeEstimation/source/main.cpp" "/Users/song/Code/GazeEstimation/CMakeFiles/EyeTracking.dir/source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
