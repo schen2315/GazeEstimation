@@ -12,7 +12,7 @@ struct SubjectData
 	std::string fileNameWithPath;
 	//subject gender
 	std::string gender;
-	//autism diagnosis
+	//autism diagnosis	--> classification
 	std::string diagnosis;
 
 	//all gaze points

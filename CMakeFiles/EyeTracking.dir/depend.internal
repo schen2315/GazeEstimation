@@ -1822,6 +1822,7 @@ CMakeFiles/EyeTracking.dir/source/Image.cpp.o
  /usr/local/include/opencv2/video/video.hpp
  include/Image.h
  include/Point.h
+ include/SubjectData.h
 CMakeFiles/EyeTracking.dir/source/main.cpp.o
  /Users/song/Code/GazeEstimation/source/main.cpp
  /usr/local/include/boost/array.hpp

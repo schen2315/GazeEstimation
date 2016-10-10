@@ -18,8 +18,8 @@ size_t ASDClassification::GetNumberOfSubjects()
 void ASDClassification::CreateDisplayImageOfGaze(size_t subject)
 {
 	Image image(1280, 1024);
-	image.PlotPoints(data.at(subject).avgGaze);
-	image.Display(data.at(subject).GetTitle());
+	image.PlotPoints(data.at(subject).avgGaze, data.at(subject));
+	//image.Display(data.at(subject).GetTitle());
 }
 void ASDClassification::ParseTSVFiles(std::string tsvDir)
 {

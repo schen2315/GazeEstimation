@@ -75,6 +75,6 @@ void NDAR()
 	classify.WriteArffFile("./TestData/asd_mean_sd.arff", "./TestData/out.txt");
 	for (size_t i = 0; i < classify.GetNumberOfSubjects(); ++i)
 	{
-		//classify.CreateDisplayImageOfGaze(i);
+		classify.CreateDisplayImageOfGaze(i);
 	}
 }

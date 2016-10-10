@@ -41,6 +41,8 @@ iostream
 /Users/song/Code/GazeEstimation/source/Image.cpp
 Image.h
 /Users/song/Code/GazeEstimation/source/Image.h
+SubjectData.h
+/Users/song/Code/GazeEstimation/source/SubjectData.h
 opencv2/opencv.hpp
 -
 iostream
@@ -17917,6 +17919,8 @@ string
 -
 Point.h
 include/Point.h
+SubjectData.h
+include/SubjectData.h
 
 include/Point.h
 iostream

@@ -1821,6 +1821,7 @@ CMakeFiles/EyeTracking.dir/source/Image.cpp.o: /usr/local/include/opencv2/video/
 CMakeFiles/EyeTracking.dir/source/Image.cpp.o: /usr/local/include/opencv2/video/video.hpp
 CMakeFiles/EyeTracking.dir/source/Image.cpp.o: include/Image.h
 CMakeFiles/EyeTracking.dir/source/Image.cpp.o: include/Point.h
+CMakeFiles/EyeTracking.dir/source/Image.cpp.o: include/SubjectData.h
 
 CMakeFiles/EyeTracking.dir/source/main.cpp.o: source/main.cpp
 CMakeFiles/EyeTracking.dir/source/main.cpp.o: /usr/local/include/boost/array.hpp
