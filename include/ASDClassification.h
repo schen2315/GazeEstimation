@@ -14,6 +14,7 @@ public:
 	size_t GetNumberOfSubjects();
 	void CreateDisplayImageOfGaze(size_t subject);
 	void WriteArffFile(std::string file, std::string file2);
+	void WriteArffFileTypes(std::string files[], int length);
 	void printSubjects(std::string file);
 private:
 	std::vector<SubjectData> data;

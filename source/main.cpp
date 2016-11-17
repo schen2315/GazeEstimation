@@ -7,14 +7,19 @@
 
 //run either real time with iMotions or load NDAR data to analyze
 void RealTime();
-void NDAR();
+void NDAR(std::string args[]);
 
-int main()
+int main(int argc, char** argv)
 {
 	try
 	{
 		//RealTime();
-		NDAR();
+		std::string* arguments = new std::string[argc];
+		for(int i=0; i < argc; i++) {
+			std::string s(argv[i]);
+			arguments[i] = s;
+		}
+		NDAR(arguments);
 	}
 	catch (std::exception& e)
 	{
@@ -66,7 +71,7 @@ void RealTime()
 		}
 	}
 }
-void NDAR()
+void NDAR(std::string args[])
 {
 	ASDClassification classify;
 	std::cout << "testing" << std::endl;
