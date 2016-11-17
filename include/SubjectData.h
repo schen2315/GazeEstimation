@@ -17,6 +17,7 @@ struct SubjectData
 
 	//all gaze points
 	std::vector<Point>avgGaze;
+	std::vector<int> fixationDuration;	//for subjects that don't have a fixationDuration
 
 	//age of subject
 	int age;
@@ -47,6 +48,12 @@ struct SubjectData
 			<< "Risk: " << sd.diagnosis << std::endl
 			<< "Type: " << sd.type << std::endl
 			<< "Type Info: " << sd.typeInfo << std::endl;
+		os << "FixationDuration: " << std::endl;
+			for(int i=0; i < sd.fixationDuration.size(); i++) {
+				os << sd.fixationDuration[i] << " ";
+				if(i % 10 == 0) os << std::endl;
+			}
+		os << std::endl;
 		return os;
 	}
 };

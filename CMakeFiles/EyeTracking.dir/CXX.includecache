@@ -23,6 +23,8 @@ string
 -
 Image.h
 /Users/song/Code/GazeEstimation/source/Image.h
+cmath
+-
 
 /Users/song/Code/GazeEstimation/source/EyeTrackingData.cpp
 EyeTrackingData.h

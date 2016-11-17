@@ -31,13 +31,13 @@ void Image::PlotPoints(std::vector<Point>points, SubjectData &s)
 	//save image w/ the classification
 	size_t lastIndex = s.fileName.find_last_of(".");
 	std::string new_name = s.fileName.substr(0, lastIndex);
-	if(s.diagnosis == "low") {
-		cv::imwrite("./TestData/EyeGazeLow/" + new_name + ".jpg" , image);
-	} else if(s.diagnosis == "medium") {
-		cv::imwrite("./TestData/EyeGazeMedium/" + new_name + ".jpg", image);
-	} else if(s.diagnosis == "high") {
-		cv::imwrite("./TestData/EyeGazeHigh/" + new_name + ".jpg", image);
-	} else if(s.diagnosis == "ASD") {
-		cv::imwrite("./TestData/EyeGazeASD/" + new_name + ".jpg", image);
+	if(s.diagnosis == "low" && s.type == 2) {
+		cv::imwrite("./TestData/EyeGazeLowCharlieBrown/" + new_name + ".jpg" , image);
+	} else if(s.diagnosis == "medium" && s.type == 2) {
+		cv::imwrite("./TestData/EyeGazeMediumCharlieBrown/" + new_name + ".jpg", image);
+	} else if(s.diagnosis == "high" && s.type == 2) {
+		cv::imwrite("./TestData/EyeGazeHighCharlieBrown/" + new_name + ".jpg", image);
+	} else if(s.diagnosis == "ASD" && s.type == 2) {
+		cv::imwrite("./TestData/EyeGazeASDCharlieBrown/" + new_name + ".jpg", image);
 	}
 }
